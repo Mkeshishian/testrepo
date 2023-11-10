@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.chart-container, .table-box {
+    box-sizing: border-box;
+    padding: 20px;
+    width: calc(50% - 10px); /* slightly less than half to account for margins */
+    margin: 10px 0.5%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px #aaa;
+    background-color: #f9f9f9;
+
+
+}
+
+.chart-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+}
+
+#percentage-table th, #percentage-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+#percentage-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.percentage-positive {
+    color: green;
+}
+
+.percentage-negative {
+    color: red;
+}
+
+canvas {
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px #aaa;
+    background-color: #f9f9f9;
+}
+
+.card {
+    background: #f4f4f4;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+#customer-engagement-chart {
+  width: 60% !important;
+  height: auto !important;
+  margin: 0 auto;
+
+}
+#inventory-chart {
+    width: 60% !important;
+    height: auto !important;
+    margin: 0 auto;
+}
+
+
+#container {
+    width: 110%; /* increased width a bit */
+}
+
+#percentage-table {
+    font-size: .9em; /* decrease the font size */
+}
+
+#percentage-container {
+    width: 50%; /* Adjust to your desired width */
+
+}
+
+.chart-legend {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}

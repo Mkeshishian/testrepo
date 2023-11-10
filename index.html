@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+
+        <div id="sales-container" class="chart-container">
+            <h2 class="chart-title">Revenue Change</h2>
+            <canvas id="sales-chart"></canvas>
+        </div>
+
+        <div id="percentage-container" class="table-box">
+            <h2 class="chart-title">Sales Percentage Change</h2>
+            <table id="percentage-table"></table>
+        </div>
+
+        <div id="invoices-container" class="chart-container">
+            <h2 class="chart-title">Invoice Volume</h2>
+            <canvas id="invoices-chart"></canvas>
+        </div>
+
+        <div id="receivables-container" class="chart-container">
+            <h2 class="chart-title">Receivables Chart</h2>
+            <canvas id="receivables-chart"></canvas>
+        </div>
+
+        <div id="customer-engagement-container" class="chart-container">
+            <h3 class="chart-title">Customer Engagement</h3>
+            <canvas id="customer-engagement-chart"></canvas>
+            <div id="customer-engagement-legend" class="chart-legend"></div> <!-- This div will hold the legend -->
+
+        </div>
+
+        <div id="inventory-container" class="chart-container">
+            <h3 class="chart-title">Inventory Management</h3>
+            <canvas id="inventory-chart"></canvas>
+            <div id="inventory-legend" class="chart-legend"></div>  <!-- This div is for your custom legend -->
+
+        </div>
+
+        <div id="remote-utilization-container" class="chart-container">
+            <h3 class="chart-title">Remote Module Utilization Comparison</h3>
+            <canvas id="remote-utilization-chart"></canvas>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Average Invoice 2022</h3>
+                <p id="average-invoice-2022"></p>
+            </div>
+            <div class="card">
+                <h3>Average Invoice 2023</h3>
+                <p id="average-invoice-2023"></p>
+            </div>
+            <div class="card">
+                <h3>CR 2022</h3>
+                <p id="cr-ratio-2022"></p>
+            </div>
+            <div class="card">
+                <h3>CR 2023</h3>
+                <p id="cr-ratio-2023"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="charts.js"></script> <!-- ensure the correct path to your JS file -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.7/dist/chartjs-plugin-datalabels.min.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
